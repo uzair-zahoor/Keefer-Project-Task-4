@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project with bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .h-t-t {
+        color: maroon;
+        text-decoration: underline;
+        line-height: 20px;
+        font-size: 26px;
+        font-weight: 700;
+      }
+      .h-c-t {
+        font-size: 48px;
+      }
+      .h-b-t {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .bg-nav {
+        background-color: maroon;
+      }
+      ul li a {
+        color: white;
+      }
+      .nav-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ul li a:hover{
+        background-color: gray;
+        padding-left: 10px;
+        border-radius: 5px;
+      }
+      .navbar-nav {
+        margin-left: auto;
+      }
+      .form {
+        background: url("images/form_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 20px;
+        height: 420px;
+      }
+      .btn-styl{
+        width: 120px;
+        height: 35px;
+        border: none;
+        background-color: rgb(134, 7, 7);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        position: relative;
+        box-shadow: 5px 5px 5px rgb(168, 168, 168), -5px 0px 5px rgb(163, 163, 163);
+      }
+      .btn-styl::before{
+        content: "";
+        background-color: black;
+        width: 200px;
+        height: 1px;
+        position: absolute;
+        top: 0;
+      }
+      .gurantee{
+          height: 460px;
+           padding: 20px;
+      }
+      .bord{
+        border-left:1px solid black; 
+        border-right:1px solid black;
+      }
+            .form-btn{
+        width:320px; 
+        border-radius: 0px; 
+        height: 48px; 
+        background-color: rgb(165, 21, 21); 
+        margin-bottom:20px
+      }
+      @media screen and (max-width:700px) {
+              .form {
+        height: 100%;
+        margin-bottom: 100px;
+      }
+            .gurantee{
+          height: 100%;
+          width: 100%;
+      }
+            .bord{
+        border-left:none; 
+        border-right:none;
+      }
+      
+        
+      }
+       @media screen and (max-width:576px){
+        .mar-top{
+          margin-top: 20px;
+        }
+        .form{
+          margin: 0;
+        }
+        .confi-margin{
+          margin-top: 20px;
+        }
+        .form-btn{
+          margin-left: 40px;
+        }
+        /* .form{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        } */
+
+       }
+       @media screen and (max-width:360px){
+        .form-btn{
+          width: 250px;
+          font-size:16px;
+        }
+              .h-t-t {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .h-c-t {
+        font-size: 35px;
+      }
+      .h-b-t {
+        font-size: 12px;
+        font-weight: 700;
+      }
+       
+      }
+      
+    </style>
+  </head>
+  <body">
+    <!-- Header -->
+
+    <div class="container-fluid m-0">
+      <div class="row ">
+        <div class="col-lg-8 col-md-12 ">
+          <div class="">
+            <img class="img-fliud w-100" src="images/logo.png" alt="" />
+          </div>
+        </div>
+        <!-- d-flex justify-content-end -->
+        <div class="col-lg-3 offset-lg-1 col-md-12 text-center ">
+          <!-- <div class="text-center pt-2 mx-3"> -->
+            <h6 class="h-t-t mt-4">CALL OUR OFFICES NOW</h6>
+            <h4 class="fw-bolder h-c-t">234.345.6754</h4>
+            <p class="h-b-t">GET YOUR QUWSTION ANSWERS FAST</p>
+          <!-- </div> -->
+        </div>
+      </div> 
+
+      <!-- Header end-->
+      <!-- navigation bar -->
+      <nav
+        class="navbar navbar-expand-lg text-light"
+        style="background-color: maroon"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justifu-content-end mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-uppercase text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-uppercase text-light"
+                  aria-current="page"
+                  href="#"
+                  >Biography</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-uppercase text-light"
+                  aria-current="page"
+                  href="#"
+                  >Blog</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-uppercase text-light"
+                  aria-current="page"
+                  href="#"
+                  >As we Serve</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-uppercase text-light"
+                  aria-current="page"
+                  href="#"
+                  >Libaray</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-uppercase text-light"
+                  aria-current="page"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation bar end -->
+      <!-- main section -->
+      <div class="row py-3">
+        <div class="col-lg-6">
+          <div class="">
+            <img
+              class="img-fliud gurantee"
+              src="images/gurantee_banner.gif"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form d-flex flex-wrap shadow">
+            <h4
+              class="fw-bold p-2 text-light"
+              style="background-color: maroon; width: 160px; height: 60px"
+            >
+              Question?
+            </h4>
+            <p class="mx-5 fw-bold">
+              Have A
+              <span class="fw-bolder fs-5" style="color: rgb(48, 48, 119)"
+                >Question </span
+              ><br />
+              About Your Case?
+            </p>
+            <p class="mx-5 my-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing <br />
+              isci autem porro dolor tenetur
+              <span class="fw-bold">123.343.4455</span>
+            </p>
+            <div class="d-flex flex-wrap-reverse justify-content-center align-items-center confi-margin" >
+            <div class="mx-3 text-lg-end text-md-end">
+              <div class="my-1"><label for="" class="fw-bold fw-1">Name : </label><input class="mx-1" type="text"><br></div>
+              <div class="my-1"><label for="" class="fw-bold fw-1">Email : </label><input class="mx-1" type="text"><br></div>
+              <div class="my-1"><label for="" class="fw-bold fw-1">Phone : </label><input class="mx-1" type="text"><br></div>
+            </div>
+            <img class="confidential" style="height:45px; margin: 0  0 20px 0; transform: rotate(10deg);" src="images/confidential.png" alt="">
+            </div>
+            <textarea class="mx-3 my-2" style="height:60px" name="" id="" cols="50" rows="3" placeholder="Enter your text"></textarea>
+            <p class="mx-2"><i>100% privacy Guranteed</i></p>
+            <button class="text-light btn mx-2 form-btn">Ask Us About Your Case <img class="mx-1" src="images/bullet_white.gif" alt=""></button>
+          </div>
+
+        </div>
+      </div> 
+
+      <!-- main section end -->
+      <!-- Cards Area -->
+      <div class="row px-5" >
+        <!-- card 1 -->
+        <div class="col-lg-4 px-2 py-2 d-lg-flex flex-lg-row flex-wrap d-md-flex justify-content-md-center align-items-md-center flex-md-column d-sm-flex justify-content-sm-center align-items-sm-center flex-sm-column d-flex justify-content-center align-items-center flex-column">
+          <div class="">
+            <h6 class="fw-bold">CARGED WITH  <span style="color:maroon">DUI?</span></h6>
+          <p class="fw-bold " style="font-size:16px; color:maroon">FREE CASE EVALUATION</p>
+          <p style="font-size:16px">Lorem ipsum dolor sit <br>onsectetur, adipisicin <br> elit Eveniet <br><br> maiores fuga eos nisi <br>praesentium! Facilis <br> brinventore</p>
+          </div>
+          <img class="mx-4 my-lg-5 my-md-2 my-sm-2 my-xs-2" style="height:120px; width: 80px;" src="images/paste_board.gif" alt="">
+          <button class="btn-styl mx-5 my-xs-2 mar-top" style="margin-bottom:20px">Click here &nbsp; <img src="images/bullet_white.gif" alt=""></button>
+        </div>
+        <!-- card 1 end -->
+        
+<!-- card middle -->
+        <div class="col-lg-4 px-2 py-2 d-lg-flex flex-lg-wrap d-md-flex flex-md-column justify-content-md-center align-items-md-center d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center bord d-flex justify-content-center align-items-center flex-column">
+                          <!-- card middle top--> 
+          <div class=" d-lg-flex flex-wrap">
+          <div>
+           <h6 class="fw-bold">LAW <span style="color:maroon;">BLOG</span></h6>
+            <p style="font-size:16px">Lorem ipsum dolor sit <br>onsectetur, adipisicin </p>
+           </div>
+           <img class="mx-4 my-2" style="height:100px" src="images/pic1.gif" alt="">
+            <button class="btn-styl mx-5">Click here &nbsp; <img src="images/bullet_white.gif" alt=""></button>
+           </div>
+
+           <!-- card middle top end -->
+           <hr style="background-color: black; height:1px; width:100%">
+              <!-- card middle top-->
+          <div class=" d-lg-flex flex-wrap">
+          <div>
+           <h6 class="fw-bold">LAW <span style="color:maroon;">BLOG</span></h6>
+            <p style="font-size:16px">Lorem ipsum dolor sit <br>onsectetur, adipisicin </p>
+           </div>
+           <img class="mx-4 my-2" style="height:100px" src="images/order_icon.gif" alt="">
+            <button class="btn-styl mx-5">Click here &nbsp; <img src="images/bullet_white.gif" alt=""></button>
+           </div>
+           </div>
+           <!-- card middle top end -->
+        
+        <!-- right card -->
+        <div class="col-lg-4 py-3  px-4 py-2 d-lg-flex flex-lg-wrap d-md-flex flex-md-column justify-content-md-center align-items-md-center d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center d-flex justify-content-center align-items-center flex-column">
+          <div>
+          <img class="mx-2 my-2" style="height:120px" src="images/avo_rating_large.gif" alt="">
+          <img class="mx-2 my-2" style="height:120px" src="images/national_college_large.gif" alt="">
+          </div>
+          <h6 class="fw-bold " style="margin-right:45px">CERTIFICATE & <br> <span style="color:maroon;  margin-right:30px;">CREDENTIALS</span></h6>
+           <p class="my-2" style="font-size:16px">Lorem ipsum dolor sit psum dolor sit<br>onsectetur, adipisicin onsectetur, adipi</p>
+            <button class="btn-styl mx-5">Click here &nbsp; <img src="images/bullet_white.gif" alt=""></button>
+          
+
+        </div>
+           <!-- right card end-->
+           <div class="">
+            <img class="w-100 mt-5" src="images/hr_shadow.png" alt="">
+           </div>
+      </div>
+      <!-- Cards Area end -->
+      <!-- bottom secton  -->
+      <div class="row">
+        <!-- bottom left -->
+        <div class="col-lg-3 px-4 d-flex flex-column justify-content-start align-items-center">
+         <h6 class="fw-bold my-3" style="margin-right:45px; color: gray;">PRACTICE <span style="color:maroon;  margin-right:30px;">AREAS</span></h6>
+         <!-- button -->
+                    <div class=" d-flex flex-wrap my-3" style="width:200px; height:50px; background-color:gray; box-shadow: 0px 5px 5px gray;">
+                    <div class="" style="height:50px; width:10px; background-color:maroon"></div>
+               <div class="">
+                <h5 class="text-light" style="font-size:16px; margin-left:5px">DUI & DWI</h5>
+                <p class="text-light d-flex align-items-center" style="font-size:14px; margin-left: 80px; margin-bottom: 10px">
+                  LEARN MORE
+                  <img class="mx-1" src="images/bullet_red.gif" alt="" />
+                </p>
+               </div>
+         </div>
+           <!-- button end-->
+                    <!-- button -->
+                    <div class=" d-flex flex-wrap my-3" style="width:200px; height:50px; background-color:gray; box-shadow: 0px 5px 5px gray;">
+                    <div class="" style="height:50px; width:10px; background-color:maroon"></div>
+               <div class="">
+                <h5 class="text-light" style="font-size:16px; margin-left:5px">DUI & DWI</h5>
+                <p class="text-light d-flex align-items-center" style="font-size:14px; margin-left: 80px; margin-bottom: 10px">
+                  LEARN MORE
+                  <img class="mx-1" src="images/bullet_red.gif" alt="" />
+                </p>
+               </div>
+         </div>
+           <!-- button end-->
+                    <!-- button -->
+                    <div class=" d-flex flex-wrap my-3" style="width:200px; height:50px; background-color:gray; box-shadow: 0px 5px 5px gray;">
+                    <div class="" style="height:50px; width:10px; background-color:maroon"></div>
+               <div class="">
+                <h5 class="text-light" style="font-size:16px; margin-left:5px">DUI & DWI</h5>
+                <p class="text-light d-flex align-items-center" style="font-size:14px; margin-left: 80px; margin-bottom: 10px">
+                  LEARN MORE
+                  <img class="mx-1" src="images/bullet_red.gif" alt="" />
+                </p>
+               </div>
+         </div>
+           <!-- button end-->
+                    <!-- button -->
+                    <div class=" d-flex flex-wrap my-3" style="width:200px; height:50px; background-color:gray; box-shadow: 0px 5px 5px gray;">
+                    <div class="" style="height:50px; width:10px; background-color:maroon"></div>
+               <div class="">
+                <h5 class="text-light" style="font-size:16px; margin-left:5px">DUI & DWI</h5>
+                <p class="text-light d-flex align-items-center" style="font-size:14px; margin-left: 80px; margin-bottom: 10px">
+                  LEARN MORE
+                  <img class="mx-1" src="images/bullet_red.gif" alt="" />
+                </p>
+               </div>
+         </div>
+           <!-- button end-->
+             <h6 class="fw-bold my-4" style="color: gray;">LEARN <span style="color:maroon;  margin-right:0px;">MORE </span>ABOUT</h6>
+              <h6 class="fw-bold my-3" style="color: rgb(182, 181, 181);">MENU <br>AREA <br>HERE</h6>
+        
+
+
+    </div>
+    <!-- botttom left end -->
+    <!-- botttom center -->
+        <div class="col-lg-6 px-4">
+           <h6 class="fw-bold my-3" style="margin-right:45px; color: gray;">&lt;H1	&gt;	 PAGE TITLE HERE</span></h6>
+           <p style="font-size:17px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum architecto quam a, repudiandae non tenetur fuga eligendi pariatur eius dolores. Est incidunt sequi, et voluptatibus unde quae. Obcaecati, ut velit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime similique aspernatur dolorum corrupti, rerum dignissimos, officia odio voluptatum sed aliquid cum? Mollitia, totam hic?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cum, nesciunt dicta sed vero harum unde. Illum in deserunt minus ea blanditiis, ad aperiam totam debitis quod obcaecati fugit minima labore eveniet officia repudiandae quas maiores adipisci delectus quaerat numquam?</p>
+        </div>
+           <!-- botttom center end -->
+           <!-- botttom right -->
+        <div class="col-lg-3 px-4 d-flex flex-column justify-content-center align-items-center">
+          <!-- right box -->
+          <div class="my-3">
+           <h6 class="fw-bold my-3" style="margin-right:45px; color: gray;">PRACTICE <span style="color:maroon;  margin-right:30px;">AREAS</span></h6>
+           <p>Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+              <button class="btn-styl mx-5">Click here &nbsp; <img src="images/bullet_white.gif" alt=""></button>
+        </div>
+            <!-- right box -->
+              <!-- right box -->
+          <div class="my-3">
+           <h6 class="fw-bold my-3" style="margin-right:45px; color: gray;">PRACTICE <span style="color:maroon;  margin-right:30px;">AREAS</span></h6>
+           <p>Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+              <button class="btn-styl mx-5">Click here &nbsp; <img src="images/bullet_white.gif" alt=""></button>
+        </div>
+            <!-- right box -->
+              <!-- right box -->
+          <div class="my-3">
+           <h6 class="fw-bold my-3" style="margin-right:45px; color: gray;">PRACTICE <span style="color:maroon;  margin-right:30px;">AREAS</span></h6>
+           <p>Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+              <button class="btn-styl mx-5">Click here &nbsp; <img src="images/bullet_white.gif" alt=""></button>
+        </div>
+            <!-- right box -->
+            <img class="my-3" src="images/avo_rating_large.gif" alt="">
+            <img class="my-3" src="images/national_college_large.gif" alt="">
+            <div class="d-flex flex-column align-items-center">         
+              <h6 class="fw-bold " style="color: gray;">FOLLOW <span style="color:maroon;">US</span></h6>
+              <img class="w-100 h-2" src="images/hr_shadow.png" alt="">
+              <div class="my-3">
+                <img src="images/fb_icon.gif" alt="">
+                <img src="images/google_icon.gif" alt="">
+                <img src="images/twitter_icon.gif" alt="">
+                <img src="images/linked_icon.gif" alt="">
+              </div>
+              </div>
+   
+      </div>
+       <!-- botttom right end-->
+        
+      </div>
+
+      <!-- bottom section end -->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
